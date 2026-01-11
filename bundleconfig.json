@@ -1,0 +1,23 @@
+[
+  {
+    "outputFileName": "wwwroot/css/site.min.css",
+    "inputFiles": [
+
+      "wwwroot/css/*(*.css|!(*.min.css))"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/site.min.js",
+    "inputFiles": [
+      "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js",
+      "wwwroot/js/*(*.js|!(*.min.js))"
+    
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+
+    "sourceMap": false
+  }
+]
